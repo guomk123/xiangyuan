@@ -16,6 +16,7 @@ jobs:
         id: prepare_ipa
         run: |
           # 首先处理分割文件，逻辑与原来类似 
+          
           if compgen -G "splitfile*" > /dev/null; then
             echo "发现分割文件，正在合并和解压..."
             # 将分割文件合并为一个临时归档文件名
